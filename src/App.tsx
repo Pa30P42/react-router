@@ -1,5 +1,5 @@
 import "./App.css";
-import { Link, NavLink, Route, Routes } from "react-router-dom";
+import { NavLink, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Products from "./pages/Products";
@@ -29,8 +29,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />}>
           <Route path="mission" element={<Mission />} />
-          {/* <Route path="team" />
-          <Route path="reviews" /> */}
         </Route>
         <Route path="/products" element={<Products />} />
         <Route path="/products/:productId" element={<ProductDetails />} />
